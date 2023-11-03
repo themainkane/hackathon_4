@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import Homepage from "./Homepage";
 // import "./App.css";
 import Context from "./david/context/Context";
 import { useReducer } from "react";
@@ -7,7 +8,6 @@ import Images from "./damaris/Images";
 import Author from "./joe-components/Author";
 import Footer from "./jakub/Footer";
 import Header from "./jakub/Header";
-
 
 function App() {
   const [contextValue, setContextValue] = useReducer(Reducer, {
@@ -24,15 +24,7 @@ function App() {
         value={{ state: contextValue, dispatch: setContextValue }}
       >
         <>
-
-         <Header />
-          <SearchBar />
-          <Images />
-          <Author />
-
-          
-          <Footer />
-
+          <Homepage />
         </>
       </Context.Provider>
     </BrowserRouter>
