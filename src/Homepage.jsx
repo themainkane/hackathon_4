@@ -7,11 +7,9 @@ import SearchBar from "./david/SearchBar";
 export default function Homepage() {
   return (
     <>
-      <h1>Homepage</h1>
-
       <Header />
       <SearchBar />
-      
+      <Images />
       <Footer />
     </>
   );
