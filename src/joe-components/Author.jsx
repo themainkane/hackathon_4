@@ -1,5 +1,6 @@
 import { jakubKey } from "../../keys";
 import { useEffect, useState } from "react";
+import "./Author.css";
 import Images from "../damaris/Images";
 
 export default function Author() {
