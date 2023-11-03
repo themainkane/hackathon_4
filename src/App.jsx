@@ -1,7 +1,14 @@
-import "./App.css";
+// import "./App.css";
+import Footer from "./jakub/Footer";
+import Header from "./jakub/Header";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  )
 }
 
 export default App;
