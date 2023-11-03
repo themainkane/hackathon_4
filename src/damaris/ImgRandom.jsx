@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { damarisKey } from "../../keys";
-import "./img.css";
+import { damarisKey, jakubKey, joeKey } from "../../keys";
+import "./imgrandom.css";
 import { Link } from "react-router-dom";
+
 
 export default function ImgRandom() {
   const [image, setImage] = useState([]);
@@ -9,7 +10,7 @@ export default function ImgRandom() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `https://api.unsplash.com/photos/random?client_id=${damarisKey}&count=12`
+        `https://api.unsplash.com/photos/random?client_id=${jakubKey}&count=12`
       );
       const data = await response.json();
       console.log(data);

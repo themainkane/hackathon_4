@@ -3,6 +3,7 @@ import { davidKey } from '../../keys'
 import './searchBar.css'
 import context from './context/Context';
 import PageButtons from './PageButtons';
+import { Link } from 'react-router-dom';
 
 export default function SearchBar(){
 
@@ -32,18 +33,23 @@ export default function SearchBar(){
             type:'searchValue/set',
             payload: state.searchValue
         })
+        console.log(state.searchValue)
     }
     
-
+    console.log(state.searchValue)
+    console.log(state.searchData)
     return(
-        <div className='search-container'>
-            <input type="text" placeholder="Search for an image" value={state.searchValue} onChange={ ev => dispatch({
-                type: 'searchValue/set',
-                payload: (ev.target.value)
-            })} />
-            <button onClick={ handleSearch }>Search</button>
-
-            <PageButtons />
-        </div>
+        
+<>
+            <div className='search-container'>
+                <input type="text" placeholder="Search for an image" value={state.searchValue} onChange={ ev => dispatch({
+                    type: 'searchValue/set',
+                    payload: (ev.target.value)
+                })} />
+                <Link to={"/searchedImages"}> <button onClick={ handleSearch }>Search</button> </Link>   <br />
+             
+            </div>
+                <PageButtons />
+</>
     )
 }
