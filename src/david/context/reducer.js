@@ -1,7 +1,6 @@
 export default function Reducer(state, action) {
-  
-    // console.log(state);
-    // console.log(action);
+  // console.log(state);
+  // console.log(action);
 
   switch (action.type) {
     case "searchValue/set":

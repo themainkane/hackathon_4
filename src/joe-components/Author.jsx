@@ -1,5 +1,6 @@
-import { jakubKey, joeKey } from "../../keys";
+import { jakubKey } from "../../keys";
 import { useEffect, useState } from "react";
+import Images from "../damaris/Images";
 
 export default function Author() {
   const [authorInfo, setAuthorInfo] = useState([]);
@@ -45,7 +46,9 @@ export default function Author() {
       <div className="author-info">
         <h2 className="author-info__name">
           {authorInfo.links && (
-            <a href={authorInfo.links.html}>{authorInfo.name}</a>
+            <a href={authorInfo.links.html} target="">
+              {authorInfo.name}
+            </a>
           )}
         </h2>
         {authorInfo.profile_image && (
@@ -70,11 +73,7 @@ export default function Author() {
           {authorImages[0] && (
             <img src={authorImages[0].urls.full} alt="featured image" />
           )}
-          {/* <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" /> */}
+          <Images />
         </div>
       </div>
     </>
