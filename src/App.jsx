@@ -1,7 +1,12 @@
 import "./App.css";
+import Author from "./joe-components/Author";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Author />
+    </>
+  );
 }
 
 export default App;
