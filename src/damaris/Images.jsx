@@ -27,7 +27,7 @@ export default function Images() {
 
   return (
     <div className="images-box">
-      {state.searchData.map((image) => (
+      {state.searchData.results && state.searchData.results.map((image) => (
         <div key={image.id} className="image-card">
           <img src={image.urls.regular} alt={image.id} className="image" />
           <div className="user-info">

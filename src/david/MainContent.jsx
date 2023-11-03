@@ -15,9 +15,11 @@ export default function MainContent(){
             <Routes>
 
                 <Route path="/" element={ <ImgRandom /> } />
-                <Route path="/about-us" element={ <Images />} />
+                <Route path="/searchedImages" element={ <Images />} />
                 {/* <Route path="/contact" element= { <ImageDetail /> } /> */}
                 <Route path="/author/:authorName" element= { <Author /> } />
+
+
 
             </Routes>
     )
