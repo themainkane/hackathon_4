@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-// import "./App.css";
+import "./App.css";
 import Context from "./david/context/Context";
 import { useReducer } from "react";
 import Reducer from "./david/context/reducer";

@@ -1,5 +1,6 @@
 import { jakubKey, joeKey } from "../../keys";
 import { useEffect, useState } from "react";
+import "./Author.css"
 
 export default function Author() {
   const [authorInfo, setAuthorInfo] = useState([]);
