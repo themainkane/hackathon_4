@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { davidKey } from "../../../keys"
 import { useParams } from "react-router-dom";
+import context from "../context/Context";
 
 export default function AuthorDetail(){
 
