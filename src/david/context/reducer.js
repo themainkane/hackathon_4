@@ -24,6 +24,11 @@ export default function Reducer(state, action) {
         ...state,
         page: action.payload,
       };
+    case "userDetail/set":
+      return {
+        ...state,
+        userDetail: action.payload,
+      };
 
     default:
       break;

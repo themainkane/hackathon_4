@@ -13,6 +13,7 @@ function App() {
     searchData: [],
     page: 1,
     per_page: 12,
+    userDetail: [],
     // currency: localStorage.getItem('currency') || 'EUR',
   })
 
