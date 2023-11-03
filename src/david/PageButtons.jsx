@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import context from "./context/Context";
+import "./PageButtons.css"
 
 
 export default function PageButtons(){
@@ -30,7 +31,7 @@ export default function PageButtons(){
     }
 
     return(
-        <div className="search-container">
+        <div className="button-container">
             <button onClick={HandlePrevious}>Previous</button>
             <button onClick={HandleNext}>Next</button>
         </div>

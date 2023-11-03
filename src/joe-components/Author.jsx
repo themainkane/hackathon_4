@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { jakubKey, joeKey } from "../../keys";
 import { useContext, useEffect, useState } from "react";
 import context from "../david/context/Context";
+import "./Author.css";
+import Images from "../damaris/Images";
 
 export default function Author() {
 
@@ -80,12 +82,10 @@ export default function Author() {
         </div>
         <div className="author-images">
           <h5>Featured Photo</h5>
-          <img src="" alt="" className="author-images__featured" />
-          {/* <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" />
-          <img src="" alt="" className="author-images__small" /> */}
+          {authorImages[0] && (
+            <img src={authorImages[0].urls.full} alt="featured image" />
+          )}
+          <Images />
         </div>
       </div>
     </>

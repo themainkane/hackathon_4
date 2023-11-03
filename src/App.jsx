@@ -1,13 +1,10 @@
 import { BrowserRouter } from "react-router-dom";
-import Homepage from "./Homepage";
-// import "./App.css";
+import "./App.css";
 import Context from "./david/context/Context";
 import { useReducer } from "react";
 import Reducer from "./david/context/reducer";
-import Images from "./damaris/Images";
-import Author from "./joe-components/Author";
-import Footer from "./jakub/Footer";
-import Header from "./jakub/Header";
+
+import Homepage from "./Homepage";
 
 function App() {
   const [contextValue, setContextValue] = useReducer(Reducer, {
