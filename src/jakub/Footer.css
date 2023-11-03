@@ -1,0 +1,84 @@
+footer {
+    background-color: #f8f8f7;
+    color: #6e6e6e;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    width: 100%;
+}
+
+.footer-container a {
+    color: #1da1f2;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-container a:hover {
+    opacity: 0.7;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Icong, fcb, and so on...*/
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+.icon-twitter {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg');
+}
+
+.icon-facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg');
+}
+
+.icon-instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg');
+}
+
+
+/* extra */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* very basic responsive */
+@media (min-width: 768px) {
+    footer {
+        text-align: left;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .footer-container p {
+        margin: 0;
+    }
+}
