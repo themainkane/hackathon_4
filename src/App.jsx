@@ -7,6 +7,7 @@ import Images from "./damaris/Images";
 import Author from "./joe-components/Author";
 import Footer from "./jakub/Footer";
 import Header from "./jakub/Header";
+import Homepage from "./Homepage";
 
 function App() {
   const [contextValue, setContextValue] = useReducer(Reducer, {
