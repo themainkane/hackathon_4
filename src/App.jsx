@@ -4,6 +4,8 @@ import SearchBar from "./david/SearchBar";
 import Context from "./david/context/Context";
 import { useReducer } from "react";
 import Reducer from "./david/context/reducer";
+import Images from "./damaris/Images";
+import Author from "./joe-components/Author";
 
 function App() {
 
@@ -20,11 +22,12 @@ function App() {
       <Context.Provider value={{ state: contextValue, dispatch: setContextValue }} >
         <>
           <SearchBar />
+          <Images />
+          <Author />
 
         </>
       </Context.Provider >
     </BrowserRouter>
   )
 }
-
 export default App;
