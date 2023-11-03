@@ -6,7 +6,6 @@ import context from "../context/Context";
 export default function AuthorDetail(){
 
     const { id } = useParams();
-
     const { state, dispatch } = useContext(context);
 
 
@@ -25,4 +24,5 @@ export default function AuthorDetail(){
         },[])
 
         // now you can use state.user to display user info
+        <p>state.user.name</p>
 }

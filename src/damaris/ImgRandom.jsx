@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { damarisKey } from "../../keys";
 import "./img.css";
+import { Link } from "react-router-dom";
 
 export default function ImgRandom() {
   const [image, setImage] = useState([]);
@@ -32,7 +33,7 @@ export default function ImgRandom() {
           <img src={image.urls.regular} alt={image.id} className="image" />
           <span className="image-likes">{image.likes}</span>
           <div className="user-info">
-            <span className="user-name">{image.user.first_name}</span>
+            <Link to={`/author/${image.user.username}`}><span className="user-name">{image.user.name}</span></Link>
           </div>
         </div>
       ))}

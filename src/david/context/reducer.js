@@ -27,7 +27,7 @@ export default function Reducer(state, action) {
     case "userDetail/set":
       return {
         ...state,
-        userDetail: action.payload,
+        authorInfo: action.payload,
       };
 
     default:

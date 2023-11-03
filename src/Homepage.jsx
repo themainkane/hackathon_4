@@ -3,6 +3,7 @@ import Footer from "./jakub/Footer";
 import Header from "./jakub/Header";
 import SearchBar from "./david/SearchBar";
 import ImgRandom from "./damaris/imgRandom";
+import MainContent from "./david/MainContent";
 
 export default function Homepage() {
   return (
@@ -11,7 +12,7 @@ export default function Homepage() {
 
       <Header />
       <SearchBar />
-      <ImgRandom />
+      <MainContent />
       <Footer />
     </>
   );
