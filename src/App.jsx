@@ -1,7 +1,12 @@
 import "./App.css";
+import Images from "./damaris/Images";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Images />
+    </>
+  );
 }
 
 export default App;
