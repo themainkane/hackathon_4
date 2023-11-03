@@ -67,7 +67,9 @@ export default function Author() {
         </div>
         <div className="author-images">
           <h5>Featured Photo</h5>
-          <img src="" alt="" className="author-images__featured" />
+          {authorImages[0] && (
+            <img src={authorImages[0].urls.full} alt="featured image" />
+          )}
           {/* <img src="" alt="" className="author-images__small" />
           <img src="" alt="" className="author-images__small" />
           <img src="" alt="" className="author-images__small" />
